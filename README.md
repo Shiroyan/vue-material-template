@@ -1,6 +1,8 @@
-# demo
+# template
 
-> material-ui demo
+> vue with material-ui
+
+> [muse-ui doc](http://www.muse-ui.org/#/index) 
 
 ## Build Setup
 
@@ -8,10 +10,11 @@
 # install dependencies
 npm install
 
-# 一些修改
-在node_module中找到muse-ui，打开src/styles/import.less
-@{MuseThemeUi} =>  ./themes/variables/light.less
-若要更改主题在./themes/variables中找到想要的，or直接更改light.less的变量
+# some modify
+find '@{MuseThemeUi}' in node_modulle.material-ui/src/styles/import.less
+modify it to './themes/variables/light.less'
+if you want to change the theme color, just change light.less to other less file
+also you can modify the variable straightly 
 
 # serve with hot reload at localhost:8080
 npm run dev
