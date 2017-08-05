@@ -39,7 +39,8 @@ module.exports = {
       },
       {
         test: /muse-ui.src.*?js$/,
-        loader: 'vue-loader'
+        loader: 'babel-loader',
+        include: [resolve('src'), resolve('test')]
       },
       {
         test: /\.vue$/,
