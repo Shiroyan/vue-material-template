@@ -4,7 +4,7 @@
                 name="custom-classes-transition"
                 enter-active-class="animated fadeIn"
                 leave-active-class="animated fadeOut"
-                :duration="{ enter: 400, leave: 400 }">
+                :duration="{ enter: 250, leave: 250 }">
       <keep-alive>
         <router-view></router-view>
       </keep-alive>
@@ -17,8 +17,17 @@ export default {
   name: 'app',
 };
 </script>
-<style>
+<style lang="less">
+  @import "styles/global.less";
+  @import "styles/variable.less";
+
   html {
     font-size: 14px;
+  }
+  html, body, #app {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: @main;
   }
 </style>

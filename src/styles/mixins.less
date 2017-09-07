@@ -1,0 +1,16 @@
+@import './variable';
+
+.fullWH() {
+  height: 100%;
+  width: 100%;
+}
+.setWH(@w, @h) {
+  width: @w;
+  height: @h;
+}
+.wrapper {
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  background-color: @main;
+}
